@@ -2,7 +2,7 @@ FROM jupyter/scipy-notebook
 
 USER root
 
-RUN conda update pandas numpy 
+RUN conda update pandas numpy seaborn
 
 RUN pip install yapf && \
     jupyter nbextension install https://github.com/jfbercher/yapf_ext/archive/master.zip && \
